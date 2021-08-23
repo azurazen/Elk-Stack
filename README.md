@@ -27,7 +27,7 @@ Load balancing ensures that the application will be highly availability, in addi
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 
-- Filebeat is a lightweight shipper for forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing. ![Link to File beat](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html)
+- Filebeat is a lightweight shipper for forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing. [Link to File beat](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html)
 
 - Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. [Link to Metric beat](https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-overview.html)
 
