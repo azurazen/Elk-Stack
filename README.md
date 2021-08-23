@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the roles directory ala playbook(.yml) file(s) may be used to install only certain pieces of it, such as Filebeat.
 
-  - ![Filebeat](Ansible/roles/filebeat-playbook.yml)
+  - [Filebeat](Ansible/roles/filebeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
@@ -29,7 +29,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 - Filebeat is a lightweight shipper for forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing. ![Link to File beat](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html)
 
-- Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. ![Link to Metric beat](https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-overview.html)
+- Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. [Link to Metric beat](https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-overview.html)
 
 The configuration details of each machine may be found below.
 | Name                 | Function                                        | IP Address | Operating System |
@@ -72,7 +72,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![Elk-Docker-ps Image](Images/Elk-Docker-ps.png)
+[Elk-Docker-ps Image](Images/Elk-Docker-ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -93,7 +93,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the " *-config.yml " file to "Elk-Stack-VM".
 - Update the "hosts" file to include webservers 10.0.0.6 (Web-1), 10.0.0.7 (Web-2).
-- Run the playbook, and navigate to Kibana to check that the installation worked as expected. ![Link to Kibana](http://20.98.114.15:5601/app/kibana)
+- Run the playbook, and navigate to Kibana to check that the installation worked as expected. [Link to Kibana](http://20.98.114.15:5601/app/kibana)
 
 $ ansible-playbook *-playbook.yml
 
